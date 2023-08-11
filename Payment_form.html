@@ -1,0 +1,55 @@
+<!-- forms are used to collect the data from the userd -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form </title>
+</head>
+<body>
+    <form action="">
+    <h1>Payment form</h1><hr>
+    <h2><u>Contact Info:</u></h2>
+    <p>First Name:* <input type="text" name="First Name" placeholder="First Name" required></p>
+    <p>Last Name:* <input type="text" name="Last Name" placeholder="Last Name" required></p>
+    <fieldset>
+        <legend>Gender: * </legend>
+        <p>
+            <input type="radio" name="Gender" id="Male" required>Male
+            <input type="radio" name="Gender" id="Female" required>Female
+            <input type="radio" name="Gender" id="Other" required>Other
+        
+        </p>
+    </fieldset>
+    
+    <P>Email Address: * <input type="email" name="Email Address" id="email" placeholder="Enter Your Email" required></P>
+    <p>Address:*</p>
+    <textarea name="Address" id="Address" cols="33" rows="7" placeholder="Deliver to this address" required></textarea>
+    <p>Pincode:* 
+        <input type="number" name="Pincode" id="Pincode" placeholder="Enter your area code" required>
+    </p><hr><hr>
+    <h2><u>Paymet details:</u></h2><hr>
+    <p>Card Type:
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Rupay">Rupay</option>
+        </select>
+    </p>
+    <p>Card Number:
+        <input type="number" name="number" id="number" placeholder="Enter your card number" required>
+    </p>
+    <p>Expiration:* 
+        <input type="date" name="Exp_date" id="Exp_date" required>
+    </p>
+    <p> CVV:* 
+        <input type="password" name="CVV" id="CVV" placeholder="123" required>
+    </p><br>
+    <input type="Submit" value="Pay Now">&emsp;
+    <input type="reset" value="Reset">
+
+
+</form>
+</body>
+</html>
